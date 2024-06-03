@@ -1,0 +1,81 @@
+.header-inner-content2{
+    
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 900px;
+}
+.navbar2{
+    background-image: url(img/training-828726_1920.jpg);
+    background-color: rgb(0, 0, 0);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 10px 0px 10px #2c2c2c;
+    z-index: 99;
+}
+.navbar2>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar2>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.p2{
+    color: darkslateblue;
+    text-align: center;
+}
+
+.nav2 ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    
+}
+
+.nav2 li{
+    font-size: xx-large;
+    
+}
+
+
+ 
+.nav2 ul li{
+    width: 500;
+    color: white;
+    margin-right: 1.5rem;
+    cursor: pointer;
+
+ }
+
+ .nav2 ul li:hover{
+    transform: translateY(-5px);
+    transition: all 0.2;
+    font-weight: bold;
+ }
+
+ @media (max-width:800px ){
+    .nav2{
+        position: absolute;
+        background-color: #000000;
+        width: 100px;
+        top: 46px;
+        display: none;
+      }
+
+      .nav2 ul{
+        flex-direction: column;
+      }
+
+      .nav2 ul li{
+        text-align: center;
+        padding: 0.8rem;
+
+
+      }
+ }

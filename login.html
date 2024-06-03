@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    
+</head>
+<body>
+
+    <div class="navbar">
+            
+        <div class="header-inner-content " >
+            <h1 class="logo">Sistema <span>Academia</span></h1>
+            <nav>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    
+                </ul>
+            </nav>
+            
+        </div>
+    </div>
+
+    <!-- <h1>FAÇA O LOGIN</h1> -->
+    <form>
+        <h3 class="h3font">Login</h3>
+        <input type="text" placeholder="login" id="login">
+        <input type="password" placeholder="senha" id="senha">
+                         <!-- onclick="logar() -->
+        <!-- dentro do input submit vamos chamar a funçao logar -->
+                             <!-- return false -->
+        <!-- return false ele vai parar de esperar a validaçao do formulario
+        e vai fazer o que agente mandar no caso o location href -->
+        <input class="enviar" type="submit" onclick="logar(); return false">
+    </form>
+
+    <!-- ************************************************************ java Script ************************************************************ -->
+    <script>
+
+// Primeiro passo montamos uma funçao 
+// pro sistema interpretar o que ele 
+// precisa fazer 
+
+
+// primeiro passo vamos criar uma funçao logar sem paremetro 
+
+function logar(){
+
+// primeiro passo dentro dessa funçao foi criar as 
+// variaves 
+
+var login = document.getElementById('login').value;
+var senha = document.getElementById('senha').value;
+
+// a variavel login vai receber o que vem do input login
+// mas nesse caso queremos o que for digitado dentro desse 
+// input login por isso usamos o value no final da funçao
+// isso vale a mesma coisa para a variavel senha 
+    // ********************************************
+
+// agora vamos fazer a validaçao desse usuario e senha 
+// se for incorreto vai da um erro se for correto 
+// ele vai aparecer uma mensagem e vai te enviar para 
+// outra pagina 
+
+if(login =="admin" && senha == "admin" ){
+    alert('sucesso');
+    location.href = "home.html"
+
+    // esse location é para chamar minha pagina HTML home
+    // mas para funcionar eu preciso colococar um return false 
+    // dentro do meu submit
+
+} else{
+    alert('Usuario ou senha incorretos')
+
+    // esses alert é para aparecer a mensagem se a senha esta 
+    // correta ou incorreta 
+}
+    // se o meu login for igual o meu admin e a senha 
+    // for igual admin tbm 
+    // ou seja se eu digitar admin no login com a senha admin 
+    // ele vai passar se nao ele vai exibir um erro 
+    
+
+
+
+}
+
+
+    </script>
+</body>
+</html>

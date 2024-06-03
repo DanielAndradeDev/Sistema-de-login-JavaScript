@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+
+body{
+    
+    background-image: url(img/training-828726_1920.jpg);
+    background-repeat: 0;
+  
+
+    
+}
+
+.header-inner-content{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar{
+    background-color: rgb(0, 0, 0);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 10px 0px 10px #2c2c2c;
+    z-index: 99;
+}
+.navbar>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo{
+    color: rgb(255, 255, 255);
+}
+.logo span{
+    color: rgb(105, 13, 211);
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+ .nav-icon-container{
+    display: flex;
+    align-items: center;
+
+ }     
+ .nav-icon-container img{
+    width: 30px;
+    cursor: pointer;
+ }
+
+ .nav-icon-container img:first-child{
+    margin-right: 1rem;
+ }
+
+ nav ul li{
+    color: white;
+    margin-right: 1.5rem;
+    cursor: pointer;
+
+ }
+
+ nav ul li:hover{
+    transform: translateY(-5px);
+    transition: all 0.2;
+    font-weight: bold;
+ }
+
+ @media (max-width:800px ){
+    nav{
+        position: absolute;
+        background-color: #000000;
+        width: 100px;
+        top: 46px;
+        display: none;
+      }
+      nav ul{
+        flex-direction: column;
+      }
+
+      nav ul li{
+        text-align: center;
+        padding: 0.8rem;
+
+
+      }
+ }
+
+form input {
+    margin-bottom: 50px ;
+    border: 1px solid rgb(153, 0, 255);
+    border-radius: 20px;
+}
+
+form input [type=submit] {
+    background-color: blue;
+}
+.h3font{
+ 
+    width: 450px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#login{
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#senha{
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.enviar{
+    
+    
+    color:rgb(153, 0, 255); ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+form{
+    width: 500px;
+    margin: 400px auto;
+    text-align: center;
+   
+}
+
+input{
+    
+    display: block;
+    margin: 30px;
+    width: 400px;
+    height: 50px;
+    
+}
+

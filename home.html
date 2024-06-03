@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="home2.css">
+</head>
+<body>
+    
+   
+    
+        <div class="navbar">
+            
+            <div class="header-inner-content " >
+                <h1 class="logo">Sistema <span>Academia</span></h1>
+                <nav>
+                    <ul>
+                        <li>Cadastro</li>
+                        <li>Agendamento</li>
+                        
+                    </ul>
+                </nav>
+                
+            </div>
+        </div>
+             
+
+            
+        <div class="navbar2">
+            
+            <div class="header-inner-content2 " >
+                
+                <nav class="nav2">
+                    <ul>
+                        <li><a class="nav-link" href="Cadastro.html">Cadastro</a></li>
+                        <li><a class="nav-link" href="agendamento.html">Agendamento</a> </li>
+                        
+                    </ul>
+                    <br>
+                    <p class="p2">
+                        PASSANDO O MOUSE POR CIMA DA OPÇAO <br>
+                        CADASTRO OU AGENDAMENTO VOCE SERA <br>
+                         ENVIADO PARA PAGINA
+                        
+                    </p>
+                </nav>
+                
+            </div>
+        </div>
+
+
+
+                <footer class="gray-background">
+                    <div class="page-inner-content footer-content">
+                        <div class="download-options">
+                    <p></p>
+                    <p></p>
+                    <div>
+                        <img src="images/app-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                        </div>
+                        <div class="logo-footer">
+                            <h1 class="logo">Sistema <span>Academia</span></h1>
+                            <p>Meu objetivo é fazer o melhor sistema de academia
+                                do brasil sendo iniciante
+                            </p>
+                        </div>
+                       
+    
+                    <hr class="page-inner-content">
+                    <div class="page-inner-contente copyright">
+                        <p>Copyright 2023 Daniel Andrade - Todos Direitos Reservados</p>
+                    </div>
+                </footer>
+    
+        <script>
+            const navbar = document.querySelector(".navnar");
+            const menuButton =document.querySelector(".menu-button");
+    
+            // ele vai verificar se a classe show menu tiver ele vai remover 
+            // se ela nao tiver ele vai adicionar
+            
+            menuButton.addEventListener('click', () => {
+                navbar.classList.toogle("show-menu")
+            })
+        </script>
+    
+    
+    
+    
+    </body>
+    </html>
+   
+
+</body>
+</html>
